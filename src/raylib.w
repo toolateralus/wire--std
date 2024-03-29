@@ -13,8 +13,6 @@ extern {
   i32 GetScreenWidth(),
   i32 GetScreenHeight(),
   i32 GetFrameTime(),
-  
-  void exit(i32 v),
 };
 
 struct Vector2 {
@@ -44,76 +42,76 @@ extern {
   i8 IsMouseButtonDown(i32 button),
 };
 
+enum Color {
+  BLACK = 0,
+  WHITE = 4294967295,
+  RED = 16711680,
+  LIME = 65280,
+  BLUE = 255,
+  YELLOW = 16776960,
+  CYAN = 65535,
+  MAGENTA = 16711935,
+  SILVER = 12632256,
+  GRAY = 8421504,
+  MAROON = 8388608,
+  OLIVE = 8421376,
+  GREEN = 32768,
+  PURPLE = 8388736,
+  TEAL = 32896,
+  NAVY = 128
+};
 
-i32 black = 0;
-i32 white = 4294967295;
-i32 red = 16711680;
-i32 lime = 65280;
-i32 blue = 255;
-i32 yellow = 16776960;
-i32 cyan = 65535;
-i32 magenta = 16711935;
-i32 silver = 12632256;
-i32 gray = 8421504;
-i32 maroon = 8388608;
-i32 olive = 8421376;
-i32 green = 32768;
-i32 purple = 8388736;
-i32 teal = 32896;
-i32 navy = 128;
+enum Key {
+  KEY_A = 65,
+  KEY_B = 66,
+  KEY_C = 67,
+  KEY_D = 68,
+  KEY_E = 69,
+  KEY_F = 70,
+  KEY_G = 71,
+  KEY_H = 72,
+  KEY_I = 73,
+  KEY_J = 74,
+  KEY_K = 75,
+  KEY_L = 76,
+  KEY_M = 77,
+  KEY_N = 78,
+  KEY_O = 79,
+  KEY_P = 80,
+  KEY_Q = 81,
+  KEY_R = 82,
+  KEY_S = 83,
+  KEY_T = 84,
+  KEY_U = 85,
+  KEY_V = 86,
+  KEY_W = 87,
+  KEY_X = 88,
+  KEY_Y = 89,
+  KEY_Z = 90,
+  KEY_ZERO = 48,
+  KEY_ONE = 49,
+  KEY_TWO = 50,
+  KEY_THREE = 51,
+  KEY_FOUR = 52,
+  KEY_FIVE = 53,
+  KEY_SIX = 54,
+  KEY_SEVEN = 55,
+  KEY_EIGHT = 56,
+  KEY_NINE = 57,
+  KEY_UP = 265,
+  KEY_DOWN = 264,
+  KEY_LEFT = 263,
+  KEY_RIGHT = 262,
+  KEY_SPACE = 32,
+  KEY_ENTER = 257,
+  KEY_ESCAPE = 256
+};
 
-
-
-const i32 KEY_A = 65;
-const i32 KEY_B = 66;
-const i32 KEY_C = 67;
-const i32 KEY_D = 68;
-const i32 KEY_E = 69;
-const i32 KEY_F = 70;
-const i32 KEY_G = 71;
-const i32 KEY_H = 72;
-const i32 KEY_I = 73;
-const i32 KEY_J = 74;
-const i32 KEY_K = 75;
-const i32 KEY_L = 76;
-const i32 KEY_M = 77;
-const i32 KEY_N = 78;
-const i32 KEY_O = 79;
-const i32 KEY_P = 80;
-const i32 KEY_Q = 81;
-const i32 KEY_R = 82;
-const i32 KEY_S = 83;
-const i32 KEY_T = 84;
-const i32 KEY_U = 85;
-const i32 KEY_V = 86;
-const i32 KEY_W = 87;
-const i32 KEY_X = 88;
-const i32 KEY_Y = 89;
-const i32 KEY_Z = 90;
-
-const i32 KEY_ZERO = 48;
-const i32 KEY_ONE = 49;
-const i32 KEY_TWO = 50;
-const i32 KEY_THREE = 51;
-const i32 KEY_FOUR = 52;
-const i32 KEY_FIVE = 53;
-const i32 KEY_SIX = 54;
-const i32 KEY_SEVEN = 55;
-const i32 KEY_EIGHT = 56;
-const i32 KEY_NINE = 57;
-
-const i32 KEY_UP = 265;
-const i32 KEY_DOWN = 264;
-const i32 KEY_LEFT = 263;
-const i32 KEY_RIGHT = 262;
-
-const i32 KEY_SPACE = 32;
-const i32 KEY_ENTER = 257;
-const i32 KEY_ESCAPE = 256;
-
-const i32 MOUSE_LEFT_BUTTON = 0;
-const i32 MOUSE_RIGHT_BUTTON = 1;
-const i32 MOUSE_MIDDLE_BUTTON = 2;
+enum MouseButton {
+  MOUSE_LEFT_BUTTON = 0,
+  MOUSE_RIGHT_BUTTON = 1,
+  MOUSE_MIDDLE_BUTTON = 2
+};
 
 mut i32 HEIGHT = 600;
 mut i32 WIDTH = 800;
