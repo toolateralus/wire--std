@@ -11,8 +11,14 @@ extern {
   void free(void* ptr),
 };
 
+// global variable
+extern {
+  void *stdout,
+}
+
 // STRING
 extern {
+  i32 fflush(void *file),
   i32 strcmp(string s1, string s2),
   i32 strlen(string s),
   string strcpy(string dest, string src),
